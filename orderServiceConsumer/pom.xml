@@ -45,6 +45,12 @@
             <artifactId>dubbo.dubboServiceCommon</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>dubbo</artifactId>
+            <version>2.6.5</version>
+            <scope>compile</scope>
+        </dependency>
 
     </dependencies>
 
