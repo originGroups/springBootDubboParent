@@ -15,6 +15,7 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    //@RequestParam从请求路径的?获取:127.0.0.1:8081/initOrder?userId=1&***
     @GetMapping("/initOrder")
     public List<UserAddress> initOrder(@RequestParam(value = "userId",required = true) String userId) {
         List<UserAddress> userAddresses = orderService.initOrder(userId);

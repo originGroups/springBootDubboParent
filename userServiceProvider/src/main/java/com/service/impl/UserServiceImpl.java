@@ -18,7 +18,7 @@ import java.util.List;
  * 2.让服务消费者到注册中心订阅服务提供者的服务地址
  *
  */
-@Service   //应该引入dubbo的service
+@Service   //应该引入dubbo的service,暴露服务,通过该注解将该服务注册中注册中心
 @Component //springboot 组件 因为要引入dubbo的service注解，所以spring的service不能用了，只能引入Component
 public class UserServiceImpl implements UserService {
 
